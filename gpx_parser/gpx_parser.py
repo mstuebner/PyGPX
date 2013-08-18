@@ -8,10 +8,6 @@ gpx_trackpoint = namedtuple('trackpoint',
                             'time, lon, lat, ele'
                             )
 
-gpx_track = namedtuple('track',
-                       'name, trackpoints'
-                       )
-
 
 class gpx_file:
     
