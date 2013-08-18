@@ -1,7 +1,7 @@
 from xml.dom import minidom
 from collections import namedtuple
 
-from Library.gpx_data import gpx_data
+from gpx_data import gpx_data
 
 
 gpx_trackpoint = namedtuple('trackpoint',
