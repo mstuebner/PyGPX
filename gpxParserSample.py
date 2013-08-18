@@ -12,21 +12,16 @@ if __name__ == '__main__':
         track.reduceTrackpointsByDistance()
         
         trackpoints = track.getTrackpoints()
-        sum_distance = track.getTrackDistance()
-        min_ele, max_ele = track.getMinMaxElevation()
 
         for trackpoint in trackpoints:
- 
-            dist = track.getDistanceToPrevPoint(trkpoint=trackpoint)
  
             print('    Track point: {}, Lat: {}, Lon: {}, Distance to previous point: {}'.format(trackpoint.time,
                                                                                                  trackpoint.lat,
                                                                                                  trackpoint.lon,
-                                                                                                 dist)
+                                                                                                 track.getDistanceToPrevPoint(trkpoint=trackpoint))
                   )
-            
+        
         print('\nNumber of track points: {}\nDistance: {}\nmin evelation: {}\nmax. elevation: {}'.format(track.getNumTrackpoints(),
-                                                                                                         sum_distance,
-                                                                                                         min_ele,
-                                                                                                         max_ele)
+                                                                                                         track.getTrackDistance(),
+                                                                                                         *track.getMinMaxElevation())
               )
