@@ -121,13 +121,5 @@ if __name__ == '__main__':
         trackpoints = gpx.getTrackpoints(name=track)
         distance = gpx.getTrackDistance(name=track)
 
-        for trackpoint in trackpoints:
-
-            print('    Track point: {}, Lat: {}, Lon: {}, Distance to previous point: '.format(trackpoint.time,
-                                                                                                 trackpoint.lat,
-                                                                                                 trackpoint.lon)
-                  )
-            
-    
         print('Distance: {}'.format(distance))
     
