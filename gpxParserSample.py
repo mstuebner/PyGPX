@@ -1,5 +1,10 @@
 import gpx_parser.gpx_parser as gpx_parser
 
+
+"""
+    Sample for PyGPX
+"""
+
 if __name__ == '__main__':
     
     gpx = gpx_parser.gpx_file('Track_002.gpx')
