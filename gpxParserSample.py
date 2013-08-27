@@ -3,6 +3,7 @@ import gpx_parser.gpx_parser as gpx_parser
 
 """
     Sample for PyGPX
+    2013-08-27
 """
 
 if __name__ == '__main__':
